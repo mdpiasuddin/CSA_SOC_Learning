@@ -1,0 +1,39 @@
+oot@piawazhu:~# sudo tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt
+wazuh-install-files/wazuh-passwords.txt
+# Admin user for the web user interface and Wazuh indexer. Use this user to log in to Wazuh dashboard
+  indexer_username: 'admin'
+  indexer_password: 'Yj*uX59XqeilTI0VJqbeKAgA7XhVwd.T'
+
+# Anomaly detection user for the web user interface
+  indexer_username: 'anomalyadmin'
+  indexer_password: '4.CXW?vKTfVQRV?uAWek9AOFrWg8pQP6'
+
+# Wazuh dashboard user for establishing the connection with Wazuh indexer
+  indexer_username: 'kibanaserver'
+  indexer_password: 'Jc9iA1*CSLpWmb76m6z7vYOR84Osa?j*'
+
+# Regular Dashboard user, only has read permissions to all indices and all permissions on the .kibana index
+  indexer_username: 'kibanaro'
+  indexer_password: 'fpLHzmqyHdS1CrxZ4eO+gV8CEJSAt8nh'
+
+# Filebeat user for CRUD operations on Wazuh indices
+  indexer_username: 'logstash'
+  indexer_password: 'AahsZomI.TI0IH+y4S2b2nicN6zr6iH1'
+
+# User with READ access to all indices
+  indexer_username: 'readall'
+  indexer_password: 'izgDZ0HZjeQfR+gmIeuZBsgPqP8B?Ygd'
+
+# User with permissions to perform snapshot and restore operations
+  indexer_username: 'snapshotrestore'
+  indexer_password: 'y.Yd5OJayRLgYde.b9BV9P.uo+TJe9WL'
+
+# Password for wazuh API user
+  api_username: 'wazuh'
+  api_password: '28eiGAMp9O+9B57Y40vh7?b3r05N3AZq'
+
+# Password for wazuh-wui API user
+  api_username: 'wazuh-wui'
+  api_password: 'OxOd?qInvq6N9hKUCeRAo6RIQ?0.J+L6'
+
+root@piawazhu:~#
